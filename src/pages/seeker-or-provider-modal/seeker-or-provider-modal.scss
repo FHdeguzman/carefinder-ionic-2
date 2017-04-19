@@ -1,0 +1,44 @@
+page-seeker-or-provider-modal {
+
+}
+
+
+#register{
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  background-color: map-get($eldercare-color, app-color);
+}
+
+#center-label{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  height: 15px;
+  color: map-get($eldercare-color, app-color);
+}
+
+#seeker-container{
+  margin-top: 40%;
+}
+
+#provider-container{
+  margin-top: 10%;
+}
+
+#log-label{
+  margin-top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  height: 15px;
+  color: map-get($eldercare-color, text-color);
+}
+
+#log-in{
+  height: 15px;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}

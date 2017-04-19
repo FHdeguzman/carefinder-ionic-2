@@ -1,0 +1,43 @@
+page-registration {
+
+}
+
+#registration-logo{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 25%;
+  width: 50%;
+  height: 120px;
+}
+
+
+#password-character-req{
+  font-size: 10px;
+  color: map-get($eldercare-color, text-color);
+  margin-top: 0px;
+}
+
+#terms-and-agreement-label{
+  width: 100%;
+  text-align: center;
+  font-size: 8px;
+  height: 10px;
+  color: map-get($eldercare-color, text-color);
+  margin: 0px;
+}
+
+#terms-and-agreement-button{
+  height: 15px;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  color: map-get($eldercare-color, app-color);
+}
+
+#create-account-button{
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: map-get($eldercare-color, app-color);
+}
