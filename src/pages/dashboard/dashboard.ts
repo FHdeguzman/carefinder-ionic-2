@@ -20,5 +20,4 @@ export class Dashboard {
   ionViewDidLoad() {
     console.log('ionViewDidLoad Dashboard');
   }
-
 }

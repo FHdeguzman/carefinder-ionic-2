@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 /*import { IonicModule } from 'ionic-angular';*/
 import { Dashboard } from './dashboard';
 
+
 @NgModule({
   declarations: [
     Dashboard,
@@ -13,4 +14,7 @@ import { Dashboard } from './dashboard';
     Dashboard
   ]
 })
-export class DashboardModule {}
+export class DashboardModule {
+
+
+}

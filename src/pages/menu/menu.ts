@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Dashboard } from '../dashboard/dashboard';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the Menu page.
@@ -16,10 +17,12 @@ import { Dashboard } from '../dashboard/dashboard';
 export class Menu {
   private rootPage;
   private dashboardPage;
+  private homePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   this.rootPage = Dashboard;
   this.dashboardPage = Dashboard;
+  this.homePage = HomePage;
   }
 
   ionViewDidLoad() {
@@ -29,6 +32,10 @@ export class Menu {
   openPage(p) {
     this.rootPage = p;
   }
+  logout(){
+    this.navCtrl.setRoot(HomePage);
+  }
+
 
 
 }
