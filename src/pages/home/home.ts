@@ -5,7 +5,8 @@ import { SeekerOrProviderModal } from '../seeker-or-provider-modal/seeker-or-pro
 import { NgModule } from '@angular/core';
 import { IonicModule, } from 'ionic-angular';
 import { ForgotPassword } from '../forgot-password/forgot-password';
-import { Dashboard } from '../dashboard/dashboard';
+/*import { Dashboard } from '../dashboard/dashboard';*/
+import { Menu } from '../menu/menu';
 
 
 
@@ -19,7 +20,7 @@ export class HomePage {
     constructor(public modalCtrl: ModalController, public navCtrl: NavController) { }
 
     login() {
-        this.navCtrl.setRoot(Dashboard);
+        this.navCtrl.setRoot(Menu);
     }
 
     openModal() {

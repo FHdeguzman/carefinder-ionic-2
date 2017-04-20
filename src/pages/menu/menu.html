@@ -1,0 +1,19 @@
+<ion-menu [content]="mycontent">
+
+    <ion-content>
+        <ion-list>
+             <button ion-item menuClose>
+                Dashboard
+            </button>
+            <button ion-item menuClose>
+                My Care Requests
+            </button>
+            <button ion-item menuClose>
+                Profile
+            </button>
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

@@ -11,6 +11,7 @@ import { User } from '../pages/user/user';
 import { SeekerOrProviderModal } from '../pages/seeker-or-provider-modal/seeker-or-provider-modal';
 import { ForgotPassword } from '../pages/forgot-password/forgot-password';
 import { Dashboard } from '../pages/dashboard/dashboard';
+import { Menu } from '../pages/menu/menu';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Dashboard } from '../pages/dashboard/dashboard';
     User,
     SeekerOrProviderModal,
     ForgotPassword,
-    Dashboard
+    Dashboard,
+    Menu
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { Dashboard } from '../pages/dashboard/dashboard';
     User,
     SeekerOrProviderModal,
     ForgotPassword,
-    Dashboard
+    Dashboard,
+    Menu
   ],
   providers: [
     StatusBar,
