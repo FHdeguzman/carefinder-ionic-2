@@ -12,6 +12,12 @@ import { SeekerOrProviderModal } from '../pages/seeker-or-provider-modal/seeker-
 import { ForgotPassword } from '../pages/forgot-password/forgot-password';
 import { Dashboard } from '../pages/dashboard/dashboard';
 import { Menu } from '../pages/menu/menu';
+import { MyCareRequests } from '../pages/my-care-requests/my-care-requests';
+import { Profile } from '../pages/profile/profile';
+import { PatientEnrolment } from '../pages/patient-enrolment/patient-enrolment';
+import { Search } from '../pages/search/search';
+import { Scheduler } from '../pages/scheduler/scheduler';
+import { Settings } from '../pages/settings/settings';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { Menu } from '../pages/menu/menu';
     SeekerOrProviderModal,
     ForgotPassword,
     Dashboard,
-    Menu
+    Menu,
+    MyCareRequests,
+    Profile,
+    PatientEnrolment,
+    Search,
+    Scheduler,
+    Settings
   ],
   imports: [
     BrowserModule,
@@ -37,7 +49,13 @@ import { Menu } from '../pages/menu/menu';
     SeekerOrProviderModal,
     ForgotPassword,
     Dashboard,
-    Menu
+    Menu,
+    MyCareRequests,
+    Profile,
+    PatientEnrolment,
+    Search,
+    Scheduler,
+    Settings
   ],
   providers: [
     StatusBar,

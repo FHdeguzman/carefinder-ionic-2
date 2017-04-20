@@ -23,7 +23,7 @@
                     <ion-icon name="list-box" class="menu-icon"></ion-icon>
                 </div>
                 <div col-10>
-                    <button class="menu-name" menuClose>Dashboard</button>
+                    <button class="menu-name" menuClose (click)="openPage(dashboardPage)">Dashboard</button>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
                     <ion-icon name="clipboard" class="menu-icon"></ion-icon>
                 </div>
                 <div col-10>
-                        <button class="menu-name" menuClose>My Care Requests</button>
+                        <button class="menu-name" menuClose (click)="openPage(myCareRequestsPage)">My Care Requests</button>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
                     <ion-icon name="person" class="menu-icon"></ion-icon>
                 </div>
                 <div col-10>
-                      <button class="menu-name" menuClose>Profile</button>
+                      <button class="menu-name" menuClose  (click)="openPage(profilePage)">Profile</button>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
                     <ion-icon name="clipboard" class="menu-icon"></ion-icon>
                 </div>
                 <div col-10>
-                        <button class="menu-name" menuClose>Patient Enrolment</button>
+                        <button class="menu-name" menuClose  (click)="openPage(patientEnrolmentPage)">Patient Enrolment</button>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
                     <ion-icon name="search" class="menu-icon"></ion-icon>
                 </div>
                 <div col-10>
-                        <button class="menu-name" menuClose>Search</button>
+                        <button class="menu-name" menuClose  (click)="openPage(searchPage)">Search</button>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
                     <ion-icon name="calendar" class="menu-icon"></ion-icon>
                 </div>
                 <div col-10>
-                        <button class="menu-name" menuClose>Scheduler</button>
+                        <button class="menu-name" menuClose  (click)="openPage(schedulerPage)">Scheduler</button>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
                     <ion-icon name="settings" class="menu-icon"></ion-icon>
                 </div>
                 <div col-10>
-                        <button class="menu-name" menuClose>Settings</button>
+                        <button class="menu-name" menuClose  (click)="openPage(settingsPage)">Settings</button>
                 </div>
             </div>
         </div>
