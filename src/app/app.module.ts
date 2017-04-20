@@ -10,6 +10,7 @@ import { Registration } from '../pages/registration/registration';
 import { User } from '../pages/user/user';
 import { SeekerOrProviderModal } from '../pages/seeker-or-provider-modal/seeker-or-provider-modal';
 import { ForgotPassword } from '../pages/forgot-password/forgot-password';
+import { Dashboard } from '../pages/dashboard/dashboard';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ForgotPassword } from '../pages/forgot-password/forgot-password';
     Registration,
     User,
     SeekerOrProviderModal,
-    ForgotPassword
+    ForgotPassword,
+    Dashboard
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { ForgotPassword } from '../pages/forgot-password/forgot-password';
     Registration,
     User,
     SeekerOrProviderModal,
-    ForgotPassword
+    ForgotPassword,
+    Dashboard
   ],
   providers: [
     StatusBar,

@@ -5,31 +5,36 @@ import { SeekerOrProviderModal } from '../seeker-or-provider-modal/seeker-or-pro
 import { NgModule } from '@angular/core';
 import { IonicModule, } from 'ionic-angular';
 import { ForgotPassword } from '../forgot-password/forgot-password';
+import { Dashboard } from '../dashboard/dashboard';
 
 
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+    selector: 'page-home',
+    templateUrl: 'home.html'
 })
 export class HomePage {
-  showLabel: string = "show";
+    showLabel: string = "show";
 
-  constructor(public modalCtrl: ModalController, public navCtrl: NavController) { }
+    constructor(public modalCtrl: ModalController, public navCtrl: NavController) { }
 
-  openModal() {
-    let myModal = this.modalCtrl.create(SeekerOrProviderModal);
-    myModal.present();
-  }
+    login() {
+        this.navCtrl.setRoot(Dashboard);
+    }
 
-  showPassword(input: any): any {
-   input.type = input.type === 'password' ?  'text' : 'password';
-   this.showLabel = input.type === 'text' ?  'hide' : 'show';
-  }
+    openModal() {
+        let myModal = this.modalCtrl.create(SeekerOrProviderModal);
+        myModal.present();
+    }
 
-  goToForgotPasswordModal(){
-    let forgotPasswordModal = this.modalCtrl.create(ForgotPassword);
-    forgotPasswordModal.present();
+    showPassword(input: any): any {
+        input.type = input.type === 'password' ? 'text' : 'password';
+        this.showLabel = input.type === 'text' ? 'hide' : 'show';
+    }
+
+    goToForgotPasswordModal() {
+        let forgotPasswordModal = this.modalCtrl.create(ForgotPassword);
+        forgotPasswordModal.present();
 
     }
 
