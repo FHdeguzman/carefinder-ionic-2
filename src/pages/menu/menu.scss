@@ -1,3 +1,44 @@
 page-menu {
 
 }
+
+.height-50px{
+  height: 100px;
+/*  border: 1px solid black;
+*/}
+
+#default-img{
+  height: 90%;
+  width: 90%;
+  margin: 5%;
+}
+
+#name{
+  margin-top: 15%;
+}
+
+#email{
+  margin-top: -5%;
+  padding-top: 0%;
+  font-size: 11px;
+}
+
+.menu-div{
+  height: 50px;
+/*  border: 1px solid black;*/
+}
+
+.menu-icon{
+  margin: 28% 0% 25% 25%;
+  color: gray;
+  height: 100%;
+}
+
+.menu-name{
+  margin-top: 5%;
+  margin-left: -5%;
+  font-size: 15px;
+  width: 100%;
+  background-color: white;
+  text-align: left;
+}

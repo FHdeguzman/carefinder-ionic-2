@@ -1,17 +1,116 @@
 <ion-menu [content]="mycontent">
 
     <ion-content>
-        <ion-list>
-             <button ion-item menuClose>
-                Dashboard
-            </button>
-            <button ion-item menuClose>
-                My Care Requests
-            </button>
-            <button ion-item menuClose>
-                Profile
-            </button>
-        </ion-list>
+        <div class="height-50px background-color-primary">
+            <div class="row">
+                <div col-4>
+                    <img src="/assets/icon/default_image_icon.png" id="default-img">
+                </div>
+                <div col-8 class="color-white">
+                    <p id="name">
+                        Milky Joy Agora
+                    </p>
+                    <p id="email">
+                        milkyjoyagora@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- menuClose -->
+        <div class="menu-div">
+            <div class="row">
+                <div col-2>
+                    <ion-icon name="list-box" class="menu-icon"></ion-icon>
+                </div>
+                <div col-10>
+                    <button class="menu-name" menuClose>Dashboard</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-div">
+            <div class="row">
+                <div col-2>
+                    <ion-icon name="clipboard" class="menu-icon"></ion-icon>
+                </div>
+                <div col-10>
+                        <button class="menu-name" menuClose>My Care Requests</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-div">
+            <div class="row">
+                <div col-2>
+                    <ion-icon name="person" class="menu-icon"></ion-icon>
+                </div>
+                <div col-10>
+                      <button class="menu-name" menuClose>Profile</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-div">
+            <div class="row">
+                <div col-2>
+                    <ion-icon name="clipboard" class="menu-icon"></ion-icon>
+                </div>
+                <div col-10>
+                        <button class="menu-name" menuClose>Patient Enrolment</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-div">
+            <div class="row">
+                <div col-2>
+                    <ion-icon name="search" class="menu-icon"></ion-icon>
+                </div>
+                <div col-10>
+                        <button class="menu-name" menuClose>Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-div">
+            <div class="row">
+                <div col-2>
+                    <ion-icon name="calendar" class="menu-icon"></ion-icon>
+                </div>
+                <div col-10>
+                        <button class="menu-name" menuClose>Scheduler</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-div">
+            <div class="row">
+                <div col-2>
+                    <ion-icon name="settings" class="menu-icon"></ion-icon>
+                </div>
+                <div col-10>
+                        <button class="menu-name" menuClose>Settings</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">
+
+        </div>
+
+        <div class="menu-div">
+            <div class="row">
+                <div col-2>
+                    <ion-icon name="log-out" class="menu-icon"></ion-icon>
+                </div>
+                <div col-10>
+                    <div class="menu-name">
+                        Log Out
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </ion-content>
 
 </ion-menu>
