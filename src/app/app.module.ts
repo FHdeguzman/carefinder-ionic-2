@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { Registration } from '../pages/registration/registration';
 import { User } from '../pages/user/user';
 import { SeekerOrProviderModal } from '../pages/seeker-or-provider-modal/seeker-or-provider-modal';
+import { ForgotPassword } from '../pages/forgot-password/forgot-password';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SeekerOrProviderModal } from '../pages/seeker-or-provider-modal/seeker-
     HomePage,
     Registration,
     User,
-    SeekerOrProviderModal
+    SeekerOrProviderModal,
+    ForgotPassword
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { SeekerOrProviderModal } from '../pages/seeker-or-provider-modal/seeker-
     HomePage,
     Registration,
     User,
-    SeekerOrProviderModal
+    SeekerOrProviderModal,
+    ForgotPassword
   ],
   providers: [
     StatusBar,

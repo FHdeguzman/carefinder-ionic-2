@@ -36,12 +36,12 @@
 
 
 
-    <button ion-button id="sign-in-button">Yes</button>
+    <button ion-button id="sign-in-button">Log In</button>
     <div>
       <ion-grid>
         <ion-row>
           <ion-col col-2></ion-col>
-          <ion-col col-8><button ion-button clear id="forgot-password-button">Forgot Password</button></ion-col>
+          <ion-col col-8><button ion-button clear id="forgot-password-button" (click)="goToForgotPasswordModal()">Forgot Password</button></ion-col>
           <ion-col col-2></ion-col>
         </ion-row>
       </ion-grid>

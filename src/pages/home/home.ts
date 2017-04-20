@@ -4,6 +4,7 @@ import { ModalController } from 'ionic-angular';
 import { SeekerOrProviderModal } from '../seeker-or-provider-modal/seeker-or-provider-modal';
 import { NgModule } from '@angular/core';
 import { IonicModule, } from 'ionic-angular';
+import { ForgotPassword } from '../forgot-password/forgot-password';
 
 
 
@@ -26,8 +27,11 @@ export class HomePage {
    this.showLabel = input.type === 'text' ?  'hide' : 'show';
   }
 
+  goToForgotPasswordModal(){
+    let forgotPasswordModal = this.modalCtrl.create(ForgotPassword);
+    forgotPasswordModal.present();
 
-
+    }
 
 
 }
