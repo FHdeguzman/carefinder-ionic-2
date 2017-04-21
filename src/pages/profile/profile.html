@@ -1,12 +1,58 @@
 <ion-header>
-  <ion-navbar color='elder-care'>
-    <button ion-button menuToggle>
+    <ion-navbar color='elder-care'>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Profile</ion-title>
-  </ion-navbar>
+        <ion-title>Profile</ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-<!--    <button ion-button secondary menuToggle>Toggle Menu</button>-->
+<ion-content>
+    <div id="profile-name-div" class="row">
+        <div col-4>
+            <img src="/assets/icon/profile_default_image.png" id="profile-default-img">
+        </div>
+        <div col-8>
+            <div id="profile-name">
+                Milky Joy Racelis Agora
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="row margin-top-10-side-15" id="basic-info-div">
+            <div col-10>
+                Basic Information
+            </div>
+            <div col-2>
+                <button ion-button clear id="edit-btn">Edit</button>
+            </div>
+        </div>
+        <div class="row margin-top-5-no-bottom-side-15">
+            <div col-1>
+                <ion-icon name="navigate"></ion-icon>
+            </div>
+            <div col-11 class="font-13px">
+                Lives in Culiat, Quezon City
+            </div>
+        </div>
+
+        <div class="row margin-top-5-no-bottom-side-15">
+            <div col-1>
+                <ion-icon name="calendar"></ion-icon>
+            </div>
+            <div col-11 class="font-13px">
+                Born on January 1, 1994
+            </div>
+        </div>
+
+        <div class="row margin-top-5-no-bottom-side-15">
+            <div col-1>
+                <ion-icon name="call"></ion-icon>
+            </div>
+            <div col-11 class="font-13px">
+                +639 12345678
+            </div>
+        </div>
+    </div>
 </ion-content>
