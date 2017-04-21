@@ -1,13 +1,52 @@
-
 <ion-header>
-  <ion-navbar color='elder-care'>
-    <button ion-button menuToggle>
+    <ion-navbar color='elder-care'>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Dashboard</ion-title>
-  </ion-navbar>
+        <ion-title>Dashboard</ion-title>
+
+        <ion-buttons end>
+            <button ion-button icon-only>
+    <ion-icon name="refresh"></ion-icon>
+  </button>
+        </ion-buttons>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-<!--    <button ion-button secondary menuToggle>Toggle Menu</button>-->
+<ion-content scroll=false>
+    <div id="dashboard-top-div" class="background-color-primary">
+        <p id="dashboard-message">
+            {{dashboardTopMessage}}
+        </p>
+    </div>
+
+    <div id="personal-details">
+        <div class="row margin-top-5-side-15 font-13px">
+            <div col-10>
+                Personal Details
+            </div>
+            <div col-2>
+                1/5
+            </div>
+        </div>
+
+        <ion-item *ngFor="let list of personalDetailsList" no-lines id="personal-details-item" no-padding>
+            <div class="row border-item">
+                <div col-1>
+                    <ion-icon class="color-green" name="checkmark-circle" *ngIf="!list.isEditable"></ion-icon>
+                    <ion-icon class="color-primary" name="create" *ngIf="list.isEditable"></ion-icon>
+                </div>
+                <div col-11>
+                    {{list.name}}
+                </div>
+            </div>
+        </ion-item>
+    </div>
+
+    <div id="patient-information">
+      <div class="margin-top-10-side-15 font-13px">
+        Patient Information
+      </div>
+    </div>
+
 </ion-content>

@@ -20,11 +20,31 @@
     background-color: map-get($eldercare-color, app-color);
 }
 
+.color-primary{
+  color: map-get($eldercare-color, app-color);
+}
+
 .color-white{
   color: white;
+}
+
+.color-green{
+  color: green;
 }
 
 .divider{
   height: 1px;
   background-color: gray;
+}
+
+.font-15px{
+  font-size: 15px;
+}
+
+.margin-top-5-side-15{
+    margin: 5px 15px 5px 15px;
+}
+
+.margin-top-10-side-15{
+    margin: 10px 15px 5px 15px;
 }

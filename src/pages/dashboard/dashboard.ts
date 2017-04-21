@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { DashboardPersonalDetails } from '../../utils/domains/dashboard-personal-details.model';
 /**
  * Generated class for the Dashboard page.
  *
@@ -9,15 +9,29 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 @IonicPage()
 @Component({
-  selector: 'page-dashboard',
-  templateUrl: 'dashboard.html',
+    selector: 'page-dashboard',
+    templateUrl: 'dashboard.html',
 })
-export class Dashboard {
+export class Dashboard implements OnInit {
+    dashboardTopMessage: string = "Fill in the necessary informations and add atleast one (1) patient to be able to book a care request."
+    personalDetailsList: DashboardPersonalDetails[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Dashboard');
-  }
-}
+    constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    }
+
+    ngOnInit() {
+        this.personalDetailsList = [
+          {isEditable:false, name:'Name'},
+          {isEditable:true, name:'Profile Picture'},
+          {isEditable:true, name:'Birthdate'},
+          {isEditable:true, name:'Gender'},
+          {isEditable:true, name:'Address'}
+        ];
+
+    }
+    ionViewDidLoad() {
+        console.log('ionViewDidLoad Dashboard');
+    }
+};
