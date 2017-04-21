@@ -13,6 +13,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'my-care-requests.html',
 })
 export class MyCareRequests {
+careRequestsTopMessage: string = "Booking requests are displayed here. Try our hands at managing care requests."
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

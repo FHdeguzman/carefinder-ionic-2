@@ -1,12 +1,19 @@
 <ion-header>
-  <ion-navbar color='elder-care'>
-    <button ion-button menuToggle>
+    <ion-navbar color='elder-care'>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Patient Enrolment</ion-title>
-  </ion-navbar>
+        <ion-title>Patient Enrolment</ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-<!--    <button ion-button secondary menuToggle>Toggle Menu</button>-->
+<ion-content>
+    <div id="patient-enrolment-top-div">
+      <div class="margin-top-5-side-15 text-align-justify">
+        {{patientEnrolmentMessage}}
+      </div>
+    </div>
+    <div align="right">
+      <button ion-button clear class="color-primary">Add</button>
+    </div>
 </ion-content>

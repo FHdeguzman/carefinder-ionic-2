@@ -13,6 +13,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'patient-enrolment.html',
 })
 export class PatientEnrolment {
+  patientEnrolmentMessage: string = "Creating patient profile will help us build a pool of care providers to meet your needs. Build profiles for your family members who need care. You can also create one for yourself."
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
