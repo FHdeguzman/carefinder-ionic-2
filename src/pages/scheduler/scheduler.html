@@ -1,12 +1,24 @@
 <ion-header>
-  <ion-navbar color='elder-care'>
-    <button ion-button menuToggle>
+    <ion-navbar color='elder-care'>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Scheduler</ion-title>
-  </ion-navbar>
+        <ion-title>Scheduler</ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-<!--    <button ion-button secondary menuToggle>Toggle Menu</button>-->
+<ion-content>
+    <div id="scheduler-filter-div">
+        <div class="margin-top-5-side-15">
+            <ion-item no-lines>
+                <ion-label class="font-13px color-primary">Filter by Status</ion-label>
+                <ion-select [(ngModel)]="status" class="font-13px">
+                    <ion-option value="ongoing">On-going</ion-option>
+                    <ion-option value="completed">Completed</ion-option>
+                    <ion-option value="upcoming">Upcoming</ion-option>
+                </ion-select>
+            </ion-item>
+        </div>
+    </div>
+
 </ion-content>
