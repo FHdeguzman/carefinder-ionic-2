@@ -4,3 +4,12 @@ page-scheduler {}
     border-bottom: 2px solid lightgray;
     height: auto;
 }
+
+.calendar-btn{
+  width: 100%;
+  background-color:  map-get($eldercare-color, app-color);
+  height: 20px;
+  margin: 0px;
+  font-weight: lighter;
+  font-size: 12px;
+}

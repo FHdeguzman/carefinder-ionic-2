@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { NgCalendarModule  } from 'ionic2-calendar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -20,47 +21,48 @@ import { Scheduler } from '../pages/scheduler/scheduler';
 import { Settings } from '../pages/settings/settings';
 
 @NgModule({
-  declarations: [
-    MyApp,
-    HomePage,
-    Registration,
-    User,
-    SeekerOrProviderModal,
-    ForgotPassword,
-    Dashboard,
-    Menu,
-    MyCareRequests,
-    Profile,
-    PatientEnrolment,
-    Search,
-    Scheduler,
-    Settings
-  ],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp)
-  ],
-  bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    HomePage,
-    Registration,
-    User,
-    SeekerOrProviderModal,
-    ForgotPassword,
-    Dashboard,
-    Menu,
-    MyCareRequests,
-    Profile,
-    PatientEnrolment,
-    Search,
-    Scheduler,
-    Settings
-  ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+    declarations: [
+        MyApp,
+        HomePage,
+        Registration,
+        User,
+        SeekerOrProviderModal,
+        ForgotPassword,
+        Dashboard,
+        Menu,
+        MyCareRequests,
+        Profile,
+        PatientEnrolment,
+        Search,
+        Scheduler,
+        Settings
+    ],
+    imports: [
+        BrowserModule,
+        IonicModule.forRoot(MyApp),
+        NgCalendarModule,
+    ],
+    bootstrap: [IonicApp],
+    entryComponents: [
+        MyApp,
+        HomePage,
+        Registration,
+        User,
+        SeekerOrProviderModal,
+        ForgotPassword,
+        Dashboard,
+        Menu,
+        MyCareRequests,
+        Profile,
+        PatientEnrolment,
+        Search,
+        Scheduler,
+        Settings
+    ],
+    providers: [
+        StatusBar,
+        SplashScreen,
+        { provide: ErrorHandler, useClass: IonicErrorHandler }
+    ]
 })
-export class AppModule {}
+export class AppModule { }

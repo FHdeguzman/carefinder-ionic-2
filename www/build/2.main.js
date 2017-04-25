@@ -1,13 +1,13 @@
 webpackJsonp([2],{
 
-/***/ 308:
+/***/ 337:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__registration__ = __webpack_require__(102);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegistrationModule", function() { return RegistrationModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__seeker_or_provider_modal__ = __webpack_require__(114);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SeekerOrProviderModalModule", function() { return SeekerOrProviderModalModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -17,24 +17,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 //import { IonicModule } from 'ionic-angular';
 
-var RegistrationModule = (function () {
-    function RegistrationModule() {
+var SeekerOrProviderModalModule = (function () {
+    function SeekerOrProviderModalModule() {
     }
-    return RegistrationModule;
+    return SeekerOrProviderModalModule;
 }());
-RegistrationModule = __decorate([
+SeekerOrProviderModalModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_1__registration__["a" /* Registration */],
+            __WEBPACK_IMPORTED_MODULE_1__seeker_or_provider_modal__["a" /* SeekerOrProviderModal */],
         ],
         imports: [],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_1__registration__["a" /* Registration */]
+            __WEBPACK_IMPORTED_MODULE_1__seeker_or_provider_modal__["a" /* SeekerOrProviderModal */]
         ]
     })
-], RegistrationModule);
+], SeekerOrProviderModalModule);
 
-//# sourceMappingURL=registration.module.js.map
+//# sourceMappingURL=seeker-or-provider-modal.module.js.map
 
 /***/ })
 

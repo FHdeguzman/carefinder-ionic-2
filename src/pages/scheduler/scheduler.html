@@ -20,5 +20,28 @@
             </ion-item>
         </div>
     </div>
+    <div align="center" class="margin-top-5px font-15px font-bold">
+        {{viewTitle}}
+    </div>
+    <div class="row">
+        <div col-2 >
+            <button ion-button class="calendar-btn" [disabled]="isToday" (click)="today()">Today</button>
+        </div>
+        <div col-2 >
+            <button ion-button class="calendar-btn" (click)="changeMode('month')">M</button>
+        </div>
+        <div col-2 >
+            <button ion-button class="calendar-btn" (click)="changeMode('week')">W</button>
+        </div>
+        <div col-2>
+            <button ion-button class="calendar-btn" (click)="changeMode('day')">D</button>
+        </div>
+        <div col-4>
+            <button ion-button class="calendar-btn" (click)="loadEvents()">Load Events</button>
+        </div>
+    </div>
 
+    <calendar [eventSource]="eventSource" [calendarMode]="calendar.mode" [currentDate]="calendar.currentDate" (onCurrentDateChanged)="onCurrentDateChanged($event)" (onEventSelected)="onEventSelected($event)" (onTitleChanged)="onViewTitleChanged($event)" (onTimeSelected)="onTimeSelected($event)"
+        step="30">
+    </calendar>
 </ion-content>
